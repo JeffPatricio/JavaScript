@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script>
+        var i = 1;
+        var msg = "";
+        
+        while(i<11){
+            msg+= i+" ";
+            i++;           // verifica e depois realiza
+        }
+        alert("While: "+msg);
+        
+        do{
+           alert("Do While: "+i);
+            i++;     //Realiza e só depois verifica
+        }while(i<10)
+        
+            msg = "";
+        for(var j = 1; j < 11; j++){
+            msg += j+ " ";
+        }
+        alert("For : "+msg);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
