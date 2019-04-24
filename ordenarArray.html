@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordenar Arrays</title>
     <script type="text/javascript">
+        var cores = new Array();
+        cores.push("vermelho");
+        cores.push("azul");
+        cores.push("verde");
+        cores.push("amarelo");
+        cores.push("rosa");
+        //ordenar array por ordem de String
+        cores.sort();
+        alert("Array ordenado : "+cores);
         
+        //ordenar números
+        
+        var numeros = new Array(43,10,3,2,1,56,38);
+        numeros.sort(ordenarNumeros);
+        alert("Array ordenado : "+numeros);
+        
+        function ordenarNumeros(a,b){
+            return a-b;
+        }
     </script>
 </head>
 
