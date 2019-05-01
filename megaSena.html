@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sena</title>
+    <script>
+        var  megaSena = new Array();
+        
+        for(var i = 1; i<= 6; i++){
+            
+            var sorteio = Math.ceil(Math.random()*60);
+            if(megaSena.indexOf(sorteio) != -1){
+               i--;
+            }else{
+                megaSena.push(sorteio);
+            }
+        }
+        megaSena.sort(ordenarNumeros);
+        alert("Números : "+megaSena);
+        
+        function ordenarNumeros(a,b){
+            return a-b;
+        }
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
